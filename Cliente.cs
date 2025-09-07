@@ -39,14 +39,15 @@ namespace Clientes
 
 
 
-        public void VerDureccionClientes(Cliente cliente)
+        public string VerDireccionClientes(Cliente cliente)
         {
-            Console.WriteLine(cliente.Direccion);
+            string direc = cliente.Direccion;
+            return direc;
         }
 
         public string VerDatosCliente(Cliente cliente)
         {
-            string infoCliente = cliente.Nombre + cliente.Direccion + cliente.Telefono + cliente.DatosReferenciaDireccion;
+            string infoCliente = cliente.Nombre + ";" + cliente.Direccion + ";" +  cliente.Telefono + ";" + cliente.DatosReferenciaDireccion;
             return infoCliente; 
         }
 
